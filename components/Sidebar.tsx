@@ -1,14 +1,12 @@
-import { Space_Grotesk } from "next/font/google";
-import Image from "next/image";
+import { Red_Hat_Display } from "next/font/google";
 import Link from "next/link";
-import { TbHome, TbMapBolt, TbUserCircle } from "react-icons/tb";
 import { ModeToggle } from "./ModeToggle";
 import { Icons } from "./icons";
-import { Home, LayoutGrid, UserCircle } from "lucide-react";
+import { Home, LayoutGrid, UserCircle, HelpCircle } from "lucide-react";
 
-const space_grotesk = Space_Grotesk({
+const red_hat_display = Red_Hat_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const Sidebar = () => {
@@ -29,18 +27,18 @@ const Sidebar = () => {
               className="inline-flex w-full items-center gap-2 rounded-lg px-3 py-1.5 transition-all duration-200 ease-in-out hover:cursor-pointer hover:gap-2.5 hover:bg-muted hover:ring-1 hover:ring-accent active:scale-[0.98]"
             >
               <Home className="h-5 w-5" />
-              <span className={`${space_grotesk.className} font-medium`}>
+              <span className={`${red_hat_display.className} font-medium`}>
                 Home
               </span>
             </Link>
 
             <Link
-              href={"/explore"}
+              href={"/rides"}
               className="inline-flex w-full items-center gap-2 rounded-lg px-3 py-1.5 transition-all duration-200 ease-in-out hover:cursor-pointer hover:gap-2.5 hover:bg-muted hover:ring-1 hover:ring-muted active:scale-[0.98]"
             >
               <LayoutGrid className="h-5 w-5" />
-              <span className={`${space_grotesk.className} font-medium`}>
-                Services
+              <span className={`${red_hat_display.className} font-medium`}>
+                Rides
               </span>
             </Link>
 
@@ -49,8 +47,18 @@ const Sidebar = () => {
               className="inline-flex w-full items-center gap-2 rounded-lg px-3 py-1.5 transition-all duration-200 ease-in-out hover:cursor-pointer hover:gap-2.5 hover:bg-muted hover:ring-1 hover:ring-accent active:scale-[0.98]"
             >
               <UserCircle className="h-5 w-5" />
-              <span className={`${space_grotesk.className} font-medium`}>
+              <span className={`${red_hat_display.className} font-medium`}>
                 Me
+              </span>
+            </Link>
+
+            <Link
+              href={"/help"}
+              className="inline-flex w-full items-center gap-2 rounded-lg px-3 py-1.5 transition-all duration-200 ease-in-out hover:cursor-pointer hover:gap-2.5 hover:bg-muted hover:ring-1 hover:ring-muted active:scale-[0.98]"
+            >
+              <HelpCircle className="h-5 w-5" />
+              <span className={`${red_hat_display.className} font-medium`}>
+                Help
               </span>
             </Link>
           </div>
