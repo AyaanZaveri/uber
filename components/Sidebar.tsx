@@ -9,6 +9,8 @@ const red_hat_display = Red_Hat_Display({
   weight: ["400", "500", "600", "700"],
 });
 
+
+// sidebar element
 const Sidebar = () => {
   return (
     <div className="hidden md:block">

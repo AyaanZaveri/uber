@@ -3,8 +3,10 @@
 import Sidebar from "@/components/Sidebar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import formSubmit from "../api/formSubmit/route";
+import formSubmit from "@/lib/formSubmit";
 
+
+// help page
 export default function Page() {
   return (
     <main>
