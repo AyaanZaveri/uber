@@ -4,10 +4,10 @@ import axios from "axios";
 const routeKey = process.env.ROUTES_API_KEY;
 
 export async function POST(req: NextRequest) {
-  const { lat1, long1, lat2, long2, departureTime } = await req.json();
+  const { lat1, long1, lat2, long2, departureTime } = await req.json(); // get lat and lon for start + depart from API
 
   console.log(lat1, routeKey);
-
+  // post info into google route API
   const options = {
     method: "POST",
     url: "https://routes.googleapis.com/directions/v2:computeRoutes",

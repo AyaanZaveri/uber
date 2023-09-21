@@ -8,9 +8,9 @@ Swifly delivers on providing better last-mile connectivity to customers using tr
 
 ## How to Use Swiftly
 
-Navigate to our website: 
+Navigate to our website: https://swiftlytransit.vercel.app/rides
 
-Input starting and end locations in the navigation menu. 
+Input starting and end locations in the navigation menu in the sidebar. 
 
 Find varying routes with information including travel time, distance, and cost. 
 
